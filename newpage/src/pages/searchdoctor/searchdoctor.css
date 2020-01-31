@@ -1,0 +1,20 @@
+.ColCol{
+    padding: 0 !important;
+}
+
+.row1{
+    background: #e7e7e7;
+}
+.sortbyPart{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+#dropdown-basic{
+    background: transparent !important;
+    color: #9a9a9a;
+    border: none !important;
+}
+.sortbyPart1{
+    color: red;
+}
