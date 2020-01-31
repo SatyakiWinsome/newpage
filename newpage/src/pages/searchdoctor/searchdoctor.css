@@ -1,4 +1,4 @@
-.ColCol{
+.customCol1SearchPage{
     padding: 0 !important;
 }
 
@@ -17,4 +17,129 @@
 }
 .sortbyPart1{
     color: red;
+}
+
+.input1{
+    padding: 1.25%;
+    border-radius: 25px 0px 0px 25px;
+    width: 35%;
+    border: 1px solid #cecece;
+    margin-left: 10%;
+}
+
+.input2{
+    padding: 1.25%;
+    border-radius: 0px 25px 25px 0px;
+    width: 15%;
+    margin-left: -2%;
+    border: 1px solid #cecece;
+}
+
+.findBtn{
+    padding: 1.25%;
+    width: 15%;
+   background: #00cccb;
+   color: white;
+   border: 1px solid #00cccb;
+   border-radius: 0px 25px 25px 0px;
+   margin-left: -4%;
+}
+.inputSearch{
+    display: flex;
+    align-items: center;
+    padding-bottom: 5%;
+    margin-right: 2%;
+}
+.advancedSearch{
+    display: grid;
+    margin-left: auto;
+
+}
+
+
+.row2{
+    display: flex;
+    margin: 2%;
+    width: 100%;
+}
+.arrowBtn{
+    color: white;
+    background: red;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: 2%;
+    padding: 15%;
+    font-size: large;
+}
+
+.row3{
+    margin: 2% !important;
+}
+.femaledoc{
+    height: 25vh;
+    width: 20vw;
+}
+.imgContainerDoctorDP{
+    border: 2px solid #07d4c5;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.doctorCard{
+    
+}
+.doctorCardInner{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.verifiedAndRating{
+    position: absolute !important;
+    bottom: 5% !important;
+    left: 42% !important;
+    font-size: 1em !important;
+    background: blue !important;
+    color: white !important;
+    padding: 1% !important;
+}
+.doctorNameAndType{
+    color: red;
+    font-weight: 600;
+    margin-left: 10%;
+}
+.bookingButton{
+    background: #000098;
+    color: white;
+    padding: 10px;
+    font-weight: 700;
+}
+.searchResults{
+    border-top: 2px solid blue;
+    padding-top: 5%;
+}
+.container1{
+    text-align: left !important;
+    display: flex !important;
+    margin-bottom: 4%;
+}
+.sr1{
+    font-size: 3rem;
+    color: rgb(59, 58, 58);
+}
+.sr2{
+    color: #000098;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-left: auto;
+    align-self: center;
+
+}
+
+
+
+.detailedImg{
+    height: 24vh;
+    width: 20vw;
+    border: 2px solid green;
+    border-radius: 50%;
+    float: left;
 }

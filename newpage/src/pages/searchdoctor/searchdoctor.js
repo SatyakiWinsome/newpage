@@ -16,9 +16,16 @@ class SearchDoctor extends React.Component{
                  <div>
                      {/* Left Part */}
                  </div>
-                 <div class="col-sm-12 col-md-8 col-lg-9 ColCol">
+                 <div class="col-sm-12 col-md-8 col-lg-9 customCol1SearchPage">
                     <div className="row1">
-                        <div class="row">
+                        <div class="row" 
+                            style={{
+                                marginBottom: "5%",
+                                paddingTop: "5%",
+                                paddingLeft: "2%",
+                                paddingRight: "2%"
+                                
+                            }}>
                             <div style={{
                                             marginLeft: "2%",
                                             color:"#3938a0",
@@ -43,35 +50,38 @@ class SearchDoctor extends React.Component{
                                 </span>
                             </div>
                         </div>
-                        <div>
+                        <div className="inputSearch">
                             <input className="input1" placeholder="Search Doctor, CLinic, Speciality" />
                             <input className="input2" placeholder="Location" />
-                            <button>Find</button>
-                            <div>
-                                <button><img src={AdvancedSearch} alt="advanced search"></img></button>
-                                Advanced Search
+                            <button className="findBtn">Find</button>
+                            <div className="advancedSearch">
+                                <button style={{background: "transparent",border: "none !important"}}>
+                                    <img src={AdvancedSearch} alt="advanced search"></img>
+                                </button>
+                                <span style={{color: "red"}}>Advanced Search</span>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div>
-                            Featured <span>Doctors</span>
-                            <div>
-                                <button><i class="fas fa-arrow-left"></i></button>
-                                <button><i class="fas fa-arrow-right"></i></button>
+                        <div className="row2">
+                            <span style={{color: "#000096", fontSize: "3rem",fontWeight: "800",marginLeft: "5%"}}>Featured</span>
+                            <span style={{color: "red",fontSize: "3rem",fontWeight: "800",marginLeft: "5px"}}>Doctors</span>
+                            <div style={{display: "flex", marginLeft: "auto",marginRight: "5%"}}>
+                                <button class="arrowBtn"><i class="fas fa-arrow-left"></i></button>
+                                <button class="arrowBtn"><i class="fas fa-arrow-right"></i></button>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row row3">
                         <div className="doctorCard">
-                            <div>
+                            <div className="doctorCardInner">
                                 <div className="imgContainerDoctorDP">
-                                    <img src={femaleDoc} alt="femaleDoc"></img>
+                                    <img className="femaledoc" src={femaleDoc} alt="femaleDoc"></img>
                                 </div>
                                 <div className="doctorNameAndType">
                                     Dr. Emma Bunton<br />Orthosurgeon
                                 </div>
-                                <div className="verfiedAndRating">
+                                <div className="verifiedAndRating">
                                     <img src={tickmark} alt="verified"></img>
                                     <span>4.8/5.0</span>
                                 </div>
@@ -84,17 +94,19 @@ class SearchDoctor extends React.Component{
                         </div>
                         
                     </div>
-                    <div>
-                        <span>Search Results...</span>
-                        <span>
-                            <span className="noResultsFound">40</span>
-                            Results Found
-                        </span>
+                    <div className="searchResults">
+                        <div class="container container1">
+                            <span className="sr1">Search Results...</span>
+                            <div className="sr2">
+                                <span className="noResultsFound" style={{color: "red"}}>40</span>
+                                Results Found
+                            </div>
+                        </div>
                     </div>
                     <div class="cardDetailed">
                         <div>
                             <div>
-                                <img src={femaleDoc} alt="docPic"></img>
+                                <img src={femaleDoc} alt="docPic" className="detailedImg"></img>
                                 <div>
                                     <div>Diagnostic Radiology</div>
                                     <div>Sarah Chapman</div>
