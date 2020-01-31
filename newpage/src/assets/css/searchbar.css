@@ -1,0 +1,20 @@
+.search{
+    display: flex !important;
+    width: 100% !important;
+}
+.md-form{
+    border-bottom: none !important;
+}
+.searchIcons{
+    align-self: center;
+    padding: 2px;
+}
+.searchContainer{
+    display: flex;
+    padding-left: 12%;
+    padding-right: 12%;
+    border-bottom: 1px solid blue !important;
+}
+.searchInput{
+    border-bottom: none !important;
+}
