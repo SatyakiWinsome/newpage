@@ -19,7 +19,11 @@ class SearchDoctor extends React.Component{
                  <div class="col-sm-12 col-md-8 col-lg-9 ColCol">
                     <div className="row1">
                         <div class="row">
-                            <div style={{marginLeft: "2%"}}>
+                            <div style={{
+                                            marginLeft: "2%",
+                                            color:"#3938a0",
+                                            fontSize: "x-large"
+                                        }}>
                                 Find your physician
                             </div>
                             <div className="sortbyPart" style={{marginRight: "2%"}}>
