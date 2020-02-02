@@ -62,6 +62,18 @@
     margin: 2%;
     width: 100%;
 }
+.row2C1{
+    color: #000096; 
+    font-size: 3rem;
+    font-weight: 800;
+    margin-left: 5%;
+}
+.row2C2{
+    color: red;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-left: 5px;
+}
 .arrowBtn{
     color: white;
     background: red;
@@ -77,16 +89,14 @@
 }
 .femaledoc{
     height: 25vh;
-    width: 20vw;
+    width: 100%;
 }
 .imgContainerDoctorDP{
     border: 2px solid #07d4c5;
     border-radius: 50%;
     overflow: hidden;
 }
-.doctorCard{
-    
-}
+
 .doctorCardInner{
     display: flex;
     align-items: center;
@@ -95,16 +105,18 @@
 .verifiedAndRating{
     position: absolute !important;
     bottom: 5% !important;
-    left: 42% !important;
+    left: 27% !important;
     font-size: 1em !important;
-    background: blue !important;
+    background: #000098 !important;
     color: white !important;
     padding: 1% !important;
 }
 .doctorNameAndType{
     color: red;
     font-weight: 600;
-    margin-left: 10%;
+    margin-left: 3%;
+    width: 100%;
+    text-align: left;
 }
 .bookingButton{
     background: #000098;
@@ -138,8 +150,107 @@
 
 .detailedImg{
     height: 24vh;
-    width: 20vw;
+    width: 50%;
     border: 2px solid green;
     border-radius: 50%;
     float: left;
 }
+
+@media (max-width: 1199px){
+    .row2C1{
+        font-size: medium;
+    }
+    .row2C2{
+        font-size: medium;
+    }
+    .arrowBtn{
+        padding: 5px;
+    }
+}
+
+/* =============================================================================== */
+.cardDetailed{
+    border: 2px solid #cecece;
+    margin: 20px;
+    padding: 20px;;
+}
+.detailedImg{
+    float: left;
+}
+.cardDetailedTop{
+    display: flex;
+    margin-bottom: 10%;
+}
+.imgTextContainer{
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+.detailedImgText{
+    padding-left: 10px;
+}
+.rightDetailsContainer{
+    text-align: left;
+    align-self: center;
+    margin-left: auto;
+    border-left: 2px solid red;
+    padding-left: 20px;
+}
+.downMainButtonContainer{
+    display: flex;
+    margin-bottom: 5%;
+}
+
+
+.mainButtonHeading{
+    text-align: left;
+    margin-bottom: 5%;
+}
+.leftBtnPart{
+    font-size: 12px;
+    text-align: left;
+    align-self: center;
+}
+.rightBtnPart{
+    font-size: 12px;
+}
+.tagPart{
+    text-align: left;
+}
+.tagPartItem{
+    margin: 0px 20px;
+}
+
+.leftPartBtnCollection{
+    margin: 2px;
+    padding: 2px 10px;
+    border-radius: 25px;
+    border: none;
+    color: #87d2be;
+    font-weight: 500;
+}
+.leftPartViewAll{
+    margin-left: 5%;
+    color: red;
+    font-weight: 600;
+}
+.rightBtnCollection{
+    text-align: left;
+    margin-top: -2%;    
+}
+.rightPartBtnCollection{
+    margin: 2px;
+    padding: 10px 12px;
+    border-radius: 25px;
+    border: none;
+    font-weight: 600;
+}
+.collection1{
+    background: #040091;
+    color: #87d2be;
+}
+.collection2{
+    background: #fe292b;
+    color: white;
+}
+/* =============================================================================== */

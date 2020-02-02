@@ -64,8 +64,8 @@ class SearchDoctor extends React.Component{
                     </div>
                     <div class="row">
                         <div className="row2">
-                            <span style={{color: "#000096", fontSize: "3rem",fontWeight: "800",marginLeft: "5%"}}>Featured</span>
-                            <span style={{color: "red",fontSize: "3rem",fontWeight: "800",marginLeft: "5px"}}>Doctors</span>
+                            <span className="row2C1">Featured</span>
+                            <span className="row2C2">Doctors</span>
                             <div style={{display: "flex", marginLeft: "auto",marginRight: "5%"}}>
                                 <button class="arrowBtn"><i class="fas fa-arrow-left"></i></button>
                                 <button class="arrowBtn"><i class="fas fa-arrow-right"></i></button>
@@ -98,16 +98,16 @@ class SearchDoctor extends React.Component{
                         <div class="container container1">
                             <span className="sr1">Search Results...</span>
                             <div className="sr2">
-                                <span className="noResultsFound" style={{color: "red"}}>40</span>
-                                Results Found
+                                <span className="noResultsFound" style={{color: "red",marginRight:"4px"}}>40</span>
+                                Matches Found
                             </div>
                         </div>
                     </div>
                     <div class="cardDetailed">
-                        <div>
-                            <div>
+                        <div className="cardDetailedTop">
+                            <div className="imgTextContainer">
                                 <img src={femaleDoc} alt="docPic" className="detailedImg"></img>
-                                <div>
+                                <div className="detailedImgText">
                                     <div>Diagnostic Radiology</div>
                                     <div>Sarah Chapman</div>
                                     <div>MBBS,MRCS(Ortho UK)</div>
@@ -120,47 +120,50 @@ class SearchDoctor extends React.Component{
                                     </div>
                                 </div>
                             </div>
-                            <div>
+                            <div className="rightDetailsContainer">
                                 <div>
-                                    <i class="fas fa-map-marker-alt"></i>
+                                    <i class="fas fa-map-marker-alt" style={{margin: "5px"}}></i>
                                     <span>Kolkata, India</span>    
                                 </div>
-                                <div>
-                                    <i class="far fa-calendar-alt"></i>
-                                    <span>Monday,Tuesday,Thursday,Saturday</span>    
+                                <div style={{display: "flex"}}>
+                                    <i class="far fa-calendar-alt" style={{margin: "5px"}}></i>
+                                    <div className="daysDisplay">Monday,Tuesday,Thursday,Saturday</div>    
                                 </div>
                                 <div>
-                                    <i class="fas fa-wallet"></i>
+                                    <i class="fas fa-wallet" style={{margin: "5px"}}></i>
                                     <span>Starting from <span>INR 700</span></span>    
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <div>
-                                <button>Apollo Medical Center</button>
-                                <button>Hegde's Advanced Ultrasound Center</button>
-                                <button>Apollo Medical Center</button>
-                                <button>Hegde's Advanced Ultrasound Center</button>
-                                <button>Apollo Medical Center</button>
-                                <span>View All...</span>
+                        <div className="mainButtonHeading">
+                            Clinic & Hospital Affiliations
+                        </div>
+                        <div className="downMainButtonContainer">
+                            <div className="leftBtnPart">
+                                <button className="leftPartBtnCollection">Apollo Medical Center</button>
+                                <button className="leftPartBtnCollection">Hegde's Advanced Ultrasound Center</button>
+                                <button className="leftPartBtnCollection">Apollo Medical Center</button>
+                                <button className="leftPartBtnCollection">Hegde's Advanced Ultrasound Center</button>
+                                <button className="leftPartBtnCollection">Apollo Medical Center</button>
+                                <span className="leftPartViewAll">View All...</span>
                             </div>
-                            <div>
-                                <button>Schedule Appointment</button>
-                                <button>Book an Appointment</button>
+                            <div className="rightBtnPart">
+                                <button className="rightPartBtnCollection collection1">Schedule Appointment</button>
+                                <button className="rightPartBtnCollection collection2">Book an Appointment</button>
                             </div>
                         </div>
-                        <div>
-                            <span>
+                        <div className="tagPart">
+                            <span className="tagPartItem">
                                 <i class="fas fa-tag"></i>
                                 Tags
                             </span>
-                            <span>Radiology</span>
-                            <span>Oncology</span>
-                            <span>Diagnostics</span>
-                            <span>View All</span>
+                            <span className="tagPartItem">Radiology</span>
+                            <span className="tagPartItem">Oncology</span>
+                            <span className="tagPartItem">Diagnostics</span>
+                            <span className="tagPartItem">View All</span>
                         </div>
                     </div>
-                    <div>
+                    <div style={{textAlign: "right"}}>
                         Load More...
                     </div>
                  </div>
