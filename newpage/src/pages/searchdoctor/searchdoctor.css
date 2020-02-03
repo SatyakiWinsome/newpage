@@ -5,6 +5,12 @@
 .row1{
     background: #e7e7e7;
 }
+.row101{
+    margin-bottom: 5%;
+    padding-top: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
 .sortbyPart{
     margin-left: auto;
     display: flex;
@@ -86,6 +92,7 @@
 
 .row3{
     margin: 2% !important;
+    display: flex;
 }
 .femaledoc{
     height: 25vh;
@@ -95,6 +102,9 @@
     border: 2px solid #07d4c5;
     border-radius: 50%;
     overflow: hidden;
+}
+.doctorCard{
+    padding: 20px;;
 }
 
 .doctorCardInner{
@@ -107,22 +117,34 @@
     bottom: 5% !important;
     left: 27% !important;
     font-size: 1em !important;
-    background: #000098 !important;
     color: white !important;
     padding: 1% !important;
+    display: flex;
+}
+.ratingContainer1{
+    background: #000098 !important;
+    margin-left: -7%;
+    padding-top: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+    z-index: -2;
 }
 .doctorNameAndType{
-    color: red;
+    color: #fe292b;
     font-weight: 600;
     margin-left: 3%;
     width: 100%;
     text-align: left;
+    font-size: large;
+    margin-bottom: 10%;
 }
 .bookingButton{
     background: #000098;
     color: white;
     padding: 10px;
     font-weight: 700;
+    font-size: large;
+    border: none !important;
 }
 .searchResults{
     border-top: 2px solid blue;
@@ -151,7 +173,7 @@
 .detailedImg{
     height: 24vh;
     width: 50%;
-    border: 2px solid green;
+    border: 10px solid #69cdff;;
     border-radius: 50%;
     float: left;
 }
@@ -179,7 +201,7 @@
 }
 .cardDetailedTop{
     display: flex;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 .imgTextContainer{
     display: flex;
@@ -193,7 +215,7 @@
     text-align: left;
     align-self: center;
     margin-left: auto;
-    border-left: 2px solid red;
+    border-left: 2px solid #fe292b;
     padding-left: 20px;
 }
 .downMainButtonContainer{
@@ -205,20 +227,25 @@
 .mainButtonHeading{
     text-align: left;
     margin-bottom: 5%;
+    color: #fe292b;
+    font-size: large;
+    font-weight: 800;
 }
 .leftBtnPart{
-    font-size: 12px;
+    font-size: large;
     text-align: left;
     align-self: center;
 }
 .rightBtnPart{
-    font-size: 12px;
+    font-size: large;
 }
 .tagPart{
     text-align: left;
 }
 .tagPartItem{
     margin: 0px 20px;
+    color: #08cb8f;
+    text-decoration: underline;
 }
 
 .leftPartBtnCollection{
@@ -226,13 +253,14 @@
     padding: 2px 10px;
     border-radius: 25px;
     border: none;
-    color: #87d2be;
+    color: #327959;
     font-weight: 500;
 }
 .leftPartViewAll{
     margin-left: 5%;
-    color: red;
-    font-weight: 600;
+    color: #e0353e;;
+    font-weight: 800;
+    font-size: large;
 }
 .rightBtnCollection{
     text-align: left;
@@ -253,4 +281,149 @@
     background: #fe292b;
     color: white;
 }
+
+
 /* =============================================================================== */
+.detailedImgText1{
+    font-size: medium;
+    font-weight: 600;
+    color: #fe292b;
+}
+.detailedImgText2{
+    font-size: xx-large;
+    font-weight: 600;
+    color: #000098;
+}
+.detailedImgText3{
+    font-size: large;
+    font-weight: 600;
+    color: #b2b2b2;
+    margin-bottom: 2%;
+}
+.detailedImgText4{
+    font-size: medium;
+    font-weight: 600;
+    color: #b2b2b2;
+    display: flex;
+}
+.noFeedbacks{
+    color: #fe292b;
+
+}
+.detailedImgText41{
+    margin-right: 15px;
+}
+.detailedImgText42{
+
+}
+/* =============================================================================== */
+
+@media (max-width:1000px){
+    .verifiedAndRating{
+        z-index: 2;
+    }
+    .doctorNameAndType{
+        font-size: small !important;
+    }
+    .sr1{
+        font-size: medium;
+        font-weight: 600;
+        color: #b2b2b2;
+    }
+    .sr2{
+        font-size: medium;
+        font-weight: 600;
+    }
+    .row3{
+        display: grid !important;
+        justify-items: center;
+    }
+}
+@media (max-width: 1050px){
+    .cardDetailedTop{
+        display: grid;
+    }
+    .imgTextContainer{
+        display: grid;
+    }
+    .detailedImg{
+        justify-self: center;
+        height: unset;
+    }
+    .detailedImgText{
+        text-align: center;
+    }
+    .detailedImgText4{
+        text-align: center;
+        justify-content: center;
+    }
+    .rightDetailsContainer{
+        border: none;
+        border-top: 2px solid #fe292b;
+        margin-top: 10px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .aa121a{
+        justify-content: center;
+    }
+    .mainButtonHeading{
+        text-align: center;
+    }
+    .downMainButtonContainer{
+        display: grid;
+    }
+    .leftBtnPart{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .leftPartViewAll{
+        display: block;
+    }
+    .rightBtnPart{
+        display: grid;
+    }
+    .tagPart{
+        display: none;
+    }
+}
+
+@media (max-width: 450px){
+    .detailedImgText4{
+        display: block;
+    }
+    .detailedImgText2{
+        font-size: x-large;
+    }
+    .rightDetailsContainer{
+        font-size: small;
+    }
+    .rightDetailsContainer{
+        padding-left: 0;
+    }
+    .inputSearch{
+        display: grid;
+    }
+    .advancedSearch{
+        margin-left: 0;
+    }
+    .input1{
+        width: 58%;
+        margin-left: 4%;
+    }
+    .input2{
+        margin-left: 0;
+        border-radius: 0px;
+        width: 20%;
+    }
+    .findBtn{
+        margin-left: 0;
+    }
+    .row101{
+        display: grid;
+    }
+    .sortbyPart{
+        margin-left: 25%;
+    }
+}
